@@ -26,6 +26,7 @@ body{
     gap: 2rem;               /* Elements ke darmiyan barabar aur balanced gap rakhne ke liye */
     position: relative;   
     overflow: hidden;
+    box-sizing: border-box;
 }
             
 .search{
@@ -313,7 +314,7 @@ p{
         border-radius: 20px;
         min-height: 100vh;
         gap: 1rem;
-        
+        box-sizing: border-box;
        
     }
     .bottom{
@@ -374,6 +375,7 @@ p{
         border-radius: 20px;
         min-height: 100vh;
         gap: 1rem;
+        box-sizing: border-box;
        
     }
     
@@ -449,6 +451,7 @@ p{
         flex-direction: column;
         justify-content: space-around; /* iPhone 12 par elements ko perfect wrap aur wrap-around space dega */
         gap: 10px;
+        box-sizing: border-box; 
     }
     
     /* Welcome Page Fixes */
