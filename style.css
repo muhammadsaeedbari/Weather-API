@@ -27,7 +27,11 @@ body{
     position: relative;   
     overflow: hidden;
     box-sizing: border-box;
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> c30a45420fdf3319c56266508a723a64979a0cd5
             
 .search{
     width: 100%;
@@ -183,7 +187,11 @@ body{
     position: relative;   
     overflow: hidden;
     box-sizing: border-box;
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c30a45420fdf3319c56266508a723a64979a0cd5
 }
 p{
     font-size: 1.2rem;
@@ -317,7 +325,10 @@ p{
         min-height: 100vh;
         gap: 1rem;
         box-sizing: border-box;
+<<<<<<< HEAD
 
+=======
+>>>>>>> c30a45420fdf3319c56266508a723a64979a0cd5
        
     }
     .bottom{
@@ -456,7 +467,11 @@ p{
         flex-direction: column;
         justify-content: space-around; /* iPhone 12 par elements ko perfect wrap aur wrap-around space dega */
         gap: 10px;
+<<<<<<< HEAD
         box-sizing: border-box;
+=======
+        box-sizing: border-box; 
+>>>>>>> c30a45420fdf3319c56266508a723a64979a0cd5
     }
     
     /* Welcome Page Fixes */
