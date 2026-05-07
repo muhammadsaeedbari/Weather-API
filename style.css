@@ -61,6 +61,10 @@ body{
     
 }
 
+.masterbox{
+    display: flex;
+    flex-direction: column;
+}
 
                
 .data{
@@ -77,8 +81,8 @@ body{
 
 .data img{
     display: none;
-    height: 45%;
-    width: 45%;
+    height: 100%;
+    width: 100%;
     filter: none !important;
     border-radius: 10px;
    animation: rotate 2s linear infinite;
@@ -100,7 +104,7 @@ body{
 .master_details{
     display: flex;
     justify-content: space-between;
-    margin: auto;
+    
     width: 100%;
 }
                
