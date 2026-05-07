@@ -12,21 +12,22 @@ body{
     align-items: center;  
 
 }
-
 .container{
    background-color: bisque;
     border-radius: 20px;
-    height: 90vh;        
     width: 100%;
-    max-width: 450px; 
-    padding: 1.5rem;     
+    max-width: 420px; 
+    height: max-content; 
+    min-height: 580px; 
+    padding: 1.8rem;     
     display: flex;
     flex-direction: column;
-    justify-content: center; /* space-between ko hata kar center kar diya */
-    gap: 2rem;               /* Elements ke darmiyan barabar aur balanced gap rakhne ke liye */
+    justify-content: flex-start; /* Elements ko top se start rakhega */
+    gap: 2rem;               
     position: relative;   
     overflow: hidden;
-}
+    box-sizing: border-box;
+} 
             
 .search{
     width: 100%;
@@ -105,7 +106,7 @@ body{
 .master_details{
     display: flex;
     justify-content: space-between;
-    
+    margin-top: 10px;
     width: 100%;
 }
                
@@ -168,19 +169,21 @@ body{
     
 }  
 .container1{
-    background-color: bisque;
+   background-color: bisque;
     border-radius: 20px;
-    height: 90vh;        
     width: 100%;
-    max-width: 450px; 
-    padding: 1.5rem;     
+    max-width: 420px; 
+    height: max-content; 
+    min-height: 580px; 
+    padding: 2rem 1.8rem; /* Top/Bottom padding thodi barhaye */     
     display: flex;
     flex-direction: column;
-    justify-content: center; /* space-between ko hata kar center kar diya */
-    gap: 2rem;               /* Elements ke darmiyan barabar aur balanced gap rakhne ke liye */
+    justify-content: space-between; /* Elements ko pure box mein barabar distribute karega */
+    align-items: center; 
     position: relative;   
     overflow: hidden;
-  
+    box-sizing: border-box;
+
 }
 p{
     font-size: 1.2rem;
@@ -310,10 +313,11 @@ p{
 
     .container , .container1 {
         width: 70%;
-        border-radius: 20px;
+       
         min-height: 100vh;
         gap: 1rem;
-        
+        box-sizing: border-box;
+
        
     }
     .bottom{
@@ -347,7 +351,7 @@ p{
     .air_pressure, .humidity{
         align-items: center;
         justify-content: center;
-        gap: 1rem;
+        
     }
      .humid,
     .air {
@@ -371,9 +375,11 @@ p{
 
     .container , .container1 {
         width: 80%;
-        border-radius: 20px;
+        
+        
         min-height: 100vh;
         gap: 1rem;
+        box-sizing: border-box;
        
     }
     
@@ -412,8 +418,9 @@ p{
     }
 
     .master_details {
-
-        gap: 15px;
+       
+        margin-top: 0.8rem;
+        
         align-items: center;
     }
 
@@ -440,7 +447,7 @@ p{
     }
 
     .container, .container1 {
-         width: 100%;       
+        width: 100%;       
         height: 100vh;     
         max-height: 100vh; 
         border-radius: 0;  
@@ -449,6 +456,7 @@ p{
         flex-direction: column;
         justify-content: space-around; /* iPhone 12 par elements ko perfect wrap aur wrap-around space dega */
         gap: 10px;
+        box-sizing: border-box;
     }
     
     /* Welcome Page Fixes */
@@ -490,7 +498,7 @@ p{
 
     .master_details {
         padding: 10px; /* Details card ke andar ki space kam ki */
-        margin-top: auto; /* Isay screen ke bottom par set rakhega */
+        margin-top: 0.8rem;
     }
 
     .humidity, .air_pressure {
