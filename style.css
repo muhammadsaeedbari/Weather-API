@@ -14,17 +14,18 @@ body{
 }
 
 .container{
-    background-color: bisque;
+   background-color: bisque;
     border-radius: 20px;
-    min-height: 100vh;
-    width: 40%;
-    padding: 1rem;
+    height: 90vh;        
+    width: 100%;
+    max-width: 450px; 
+    padding: 1.5rem;     
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
-    box-sizing: border-box;
-    gap: 1rem;
+    justify-content: center; /* space-between ko hata kar center kar diya */
+    gap: 2rem;               /* Elements ke darmiyan barabar aur balanced gap rakhne ke liye */
+    position: relative;   
+    overflow: hidden;
 }
             
 .search{
@@ -167,19 +168,18 @@ body{
     
 }  
 .container1{
-     background-color: bisque;
+    background-color: bisque;
     border-radius: 20px;
-    min-height: 100vh;
-    width: 40%;
-    padding: 1rem;
+    height: 90vh;        
+    width: 100%;
+    max-width: 450px; 
+    padding: 1.5rem;     
     display: flex;
     flex-direction: column;
-    padding-top: 1rem;
-    position: relative;   /* VERY IMPORTANT */
-    overflow: hidden;     /* hide cloud outside box */
-   
-    gap: 10px;    
-    box-sizing: border-box;
+    justify-content: center; /* space-between ko hata kar center kar diya */
+    gap: 2rem;               /* Elements ke darmiyan barabar aur balanced gap rakhne ke liye */
+    position: relative;   
+    overflow: hidden;
   
 }
 p{
@@ -433,44 +433,80 @@ p{
 }
 
 /* Small Mobile */
+/* Small Mobile (Fixed Layout without Scroll) */
 @media (max-width: 480px) {
-
-
-    .container , .container1 {
-        width: 100%;
-        min-height: 100vh;
-        gap: 1rem;
-        border-radius: 20px;
-        box-sizing: border-box;
-       
+    body {
+        padding: 0; 
     }
 
-    .bottom{
-        margin-top: auto;
+    .container, .container1 {
+         width: 100%;       
+        height: 100vh;     
+        max-height: 100vh; 
+        border-radius: 0;  
+        padding: 1.5rem;   
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; /* iPhone 12 par elements ko perfect wrap aur wrap-around space dega */
+        gap: 10px;
+    }
+    
+    /* Welcome Page Fixes */
+    #clouddiv {
+        height: 100px; /* Clouds ka area chota kiya */
+    }
+    #animate { 
+        width: 90px; 
+    }
+
+    #animate2 { 
+        
+        width: 65px; 
+    }
+    
+    p {
+        font-size: 0.9rem; /* Text chota kiya taake space bache */
+    }
+    #enter {
+        margin-top: 0.8rem;  
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+
+    /* Weather Page Fixes (0% aur 0 km/h) */
+    .masterbox {
+        gap: 0.8rem;
+        margin-top: 10px;
+    }
+
+    .weather-icon {
+        width: 90px;  /* Icon size chota kiya */
+        height: 90px;
     }
 
     .temp {
-        min-width: 90%;
-        font-size: 1rem;
+        font-size: 2.2rem; /* Temp heading thodi choti ki */
     }
 
     .master_details {
-        
-        gap: 15px;
-        align-items: center;
+        padding: 10px; /* Details card ke andar ki space kam ki */
+        margin-top: auto; /* Isay screen ke bottom par set rakhega */
     }
 
-    .humid,
-    .air {
-        height: 2.5rem; /* 1rem might be too small to see clearly */
-        width: 5rem;    /* Forces the browser to keep the original shape */
-        display: block;
+    .humidity, .air_pressure {
+        gap: 5px; /* Details ke beech ka gap kam kiya */
     }
 
-    .humidity img,
-    .air_pressure img {
-        height: 2.5rem; /* 1rem might be too small to see clearly */
-        width: auto;    /* Forces the browser to keep the original shape */
-        display: block;
+    .humidity_img, .air_pressure_img {
+        width: 30px;  /* Icons thode chote kiye */
+        height: 30px;
+    }
+    
+    .humid, .air {
+        font-size: 0.95rem; /* Text clear fit hoga */
+    }
+
+    small {
+        font-size: 0.75rem;
     }
 }
