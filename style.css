@@ -181,6 +181,7 @@ body{
     gap: 2rem;               /* Elements ke darmiyan barabar aur balanced gap rakhne ke liye */
     position: relative;   
     overflow: hidden;
+    box-sizing: border-box;
   
 }
 p{
