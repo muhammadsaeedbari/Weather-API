@@ -447,16 +447,19 @@ p{
     }
 
     .container, .container1 {
-        width: 100%;       
-        height: 100vh;     
-        max-height: 100vh; 
+         width: 100%;       
+        /* min-height is better than height: 100vh for mobile */
+        min-height: 100dvh; 
         border-radius: 0;  
-        padding: 1.5rem;   
+        padding: 1rem;   
         display: flex;
         flex-direction: column;
-        justify-content: space-around; /* iPhone 12 par elements ko perfect wrap aur wrap-around space dega */
-        gap: 10px;
+        /* "center" is safer than "space-around" to avoid pushing items off-screen */
+        justify-content: center; 
+        align-items: center;
+        gap: 20px;
         box-sizing: border-box;
+        overflow-x: hidden;
     }
     
     /* Welcome Page Fixes */
