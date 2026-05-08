@@ -14,16 +14,16 @@ body{
 }
 .container{
    background-color: bisque;
-    border-radius: 20px;
-    width: 100%;
-    max-width: 420px; 
-    height: max-content; 
-    min-height: 580px; 
+    border-radius: 10px;
+    width: 500px;
+    max-width: 60vw;
+    height: 80vh;
+    max-height: 80vh;
     padding: 1.8rem;     
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Elements ko top se start rakhega */
-    gap: 2rem;               
+    gap: 1rem;               
     position: relative;   
     overflow: none;
     box-sizing: border-box;
@@ -32,7 +32,7 @@ body{
             
 .search{
     width: 100%;
-    height: 50px;
+    height: 2.5rem;
     gap: 10px;
     display: flex;
     justify-content: center;
@@ -171,11 +171,11 @@ body{
 }  
 .container1{
    background-color: bisque;
-    border-radius: 20px;
-    width: 100%;
-    max-width: 420px; 
-    height: max-content; 
-    min-height: 580px; 
+    border-radius: 10px;
+    width: 500px;
+    max-width: 60vw;
+    height: 90vh;
+    max-height: 100vh;
     padding: 2rem 1.8rem; /* Top/Bottom padding thodi barhaye */     
     display: flex;
     flex-direction: column;
@@ -186,8 +186,16 @@ body{
     box-sizing: border-box;
 
 }
-p{
+
+
+.bottom{
+    margin-top: auto;
+
+}
+
+.bottom p{
     font-size: 1.2rem;
+    text-align: center;
 }
 .txtcenter{
     margin: 0px auto;
@@ -195,7 +203,6 @@ p{
 }
 #enter{
     border: 0px;
-  
     width: 100%;
     border-radius: 15px;
     background-color: cadetblue;
@@ -212,11 +219,7 @@ p{
 }
 
     
-.bottom{
-    
-    margin-top: auto ;
 
-}
 
 #animate {
     position: absolute;
@@ -314,8 +317,9 @@ p{
 
     .container , .container1 {
         width: 70%;
-       
-        min-height: 100vh;
+        max-width: max-content;
+        border-radius:  0px;
+        min-height: 90vh;
         gap: 1rem;
         box-sizing: border-box;
        
@@ -325,7 +329,18 @@ p{
         margin-top: auto;
     }
 
- .search {
+    
+    .bottom p{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .bottom .txtcenter{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .search {
         flex-direction: row;
         gap: 10px;
         height: auto;
@@ -372,12 +387,10 @@ p{
 /* Mobile */
 @media (max-width: 768px) {
 
-
     .container , .container1 {
         width: 80%;
-        
-        
-        min-height: 100vh;
+        max-width: max-content;        
+        min-height: 90vh;
         gap: 1rem;
         box-sizing: border-box;
        
@@ -388,6 +401,15 @@ p{
 
     }
 
+    .bottom p{
+        font-size: .9rem;
+        font-weight: 500;
+    }
+
+    .bottom .txtcenter{
+        text-align: center;
+        font-size: 1.1rem;
+    }
     .search {
         flex-direction: row;
         gap: 10px;
@@ -442,6 +464,7 @@ p{
 /* Small Mobile */
 /* Small Mobile (Fixed Layout without Scroll) */
 @media (max-width: 480px) {
+
     body {
         padding: 0px; 
     }
@@ -468,47 +491,71 @@ p{
     }
 
     #animate2 { 
-        
-        width: 65px; 
+
+   
+   
+        min-height: 90vh;
+        gap: 1rem;
+        box-sizing: border-box;
+       
     }
     
-    p {
-        font-size: 0.9rem; /* Text chota kiya taake space bache */
+     .bottom{
+        margin-top: auto;
+
+    }
+    
+    .bottom p{
+        font-size: .85rem;
+        font-weight: 500;
     }
 
-    #enter {
-        margin-top: 0.8rem;  
-        font-size: 1.3rem;
-        padding: 10px;
+    .bottom .txtcenter{
+        text-align: center;
+        font-size: 1.0rem;
     }
 
-    /* Weather Page Fixes (0% aur 0 km/h) */
-    .masterbox {
-        gap: 0.8rem;
-        margin-top: 10px;
+    .search {
+        flex-direction: row;
+        gap: 10px;
+       
     }
 
-    .weather-icon {
-        width: 90px;  /* Icon size chota kiya */
-        height: 90px;
+    .inp_city {
+        width: 70%;
+        height: 45px;
+        padding: 0px;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+
+    .btn-search {
+        
+        height: 45px;
+        border-radius: 10px;
+    }
+
+    .myimage {
+        width: 100%;
+        height: 40%;
     }
 
     .temp {
-        font-size: 2.2rem; /* Temp heading thodi choti ki */
+        width: 80%;
     }
 
     .master_details {
-        padding: 10px; /* Details card ke andar ki space kam ki */
+       
         margin-top: 0.8rem;
+        
+        align-items: center;
     }
 
-    .humidity, .air_pressure {
-        gap: 5px; /* Details ke beech ka gap kam kiya */
-    }
-
-    .humidity_img, .air_pressure_img {
-        width: 30px;  /* Icons thode chote kiye */
-        height: 30px;
+     .humid,
+    .air {
+        height: 2.5rem; /* 1rem might be too small to see clearly */
+        width: 5rem;    /* Forces the browser to keep the original shape */
+        display: block;
     }
     
     .humid, .air {
@@ -516,4 +563,12 @@ p{
     }
 
  
+
+    .humidity img,
+    .air_pressure img {
+        height: 2.5rem; /* 1rem might be too small to see clearly */
+        width: auto;    /* Forces the browser to keep the original shape */
+        display: block;
+    }
+
 }
