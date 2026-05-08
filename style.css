@@ -384,8 +384,8 @@ body{
 
     .container , .container1 {
         width: 80%;
-        max-width: max-content;        
-        min-height: 90vh;
+        max-width: 60%;        
+        min-height: 100vh;
         gap: 1rem;
         box-sizing: border-box;
        
