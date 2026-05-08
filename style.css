@@ -379,9 +379,8 @@ body{
 
      .container, .container1 {
         width: 450px;
-         min-width: 60vw;
         min-height: 100vh;  
-        margin: 0;          /* Remove any outer margins */
+        margin: 0px;          /* Remove any outer margins */
          
         display: flex;
         flex-direction: column;
@@ -465,9 +464,9 @@ body{
 
     .container, .container1 {
       width: 100vw;
-        min-width: 100vw;
+        
         min-height: 100vh;  
-        margin: 0;          /* Remove any outer margins */
+        margin: 0px;          /* Remove any outer margins */
         padding: 1rem;   
         display: flex;
         flex-direction: column;
