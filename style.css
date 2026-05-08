@@ -302,7 +302,8 @@ body{
 @media (max-width: 1024px) {
     
     .container, .container1 {
-        
+        width: 500px ;
+        min-width: 60vw;
         min-height: 100vh;  
         margin: 0;          /* Remove any outer margins */
          
@@ -377,7 +378,8 @@ body{
 @media (max-width: 768px) {
 
      .container, .container1 {
-      
+        width: 450px;
+         min-width: 60vw;
         min-height: 100vh;  
         margin: 0;          /* Remove any outer margins */
          
@@ -462,7 +464,8 @@ body{
     }
 
     .container, .container1 {
-      
+      width: 100vw;
+        min-width: 100vw;
         min-height: 100vh;  
         margin: 0;          /* Remove any outer margins */
         padding: 1rem;   
