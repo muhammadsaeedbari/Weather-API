@@ -454,13 +454,14 @@ p{
         padding: 1.5rem;   
         display: flex;
         flex-direction: column;
+        justify-content: space-around; /* iPhone 12 par elements ko perfect wrap aur wrap-around space dega */
         gap: 10px;
         box-sizing: border-box;
     }
     
     /* Welcome Page Fixes */
     #clouddiv {
-        height: 100px; 
+        height: 100px; /* Clouds ka area chota kiya */
     }
     #animate { 
         width: 90px; 
