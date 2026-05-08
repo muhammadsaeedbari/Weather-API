@@ -27,18 +27,15 @@ body{
     position: relative;   
     overflow: hidden;
     box-sizing: border-box;
-<<<<<<< HEAD
+
 } 
-=======
-}
->>>>>>> c30a45420fdf3319c56266508a723a64979a0cd5
             
 .search{
     width: 100%;
     height: 50px;
-    
+    gap: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
    
 }
 
@@ -63,7 +60,7 @@ body{
     outline: 0;
     height: 100%;
     width: 20%;
-    border-radius: 50px;
+    border-radius: 10px;
     
 }
 
@@ -187,11 +184,7 @@ body{
     position: relative;   
     overflow: hidden;
     box-sizing: border-box;
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> c30a45420fdf3319c56266508a723a64979a0cd5
 }
 p{
     font-size: 1.2rem;
@@ -325,10 +318,6 @@ p{
         min-height: 100vh;
         gap: 1rem;
         box-sizing: border-box;
-<<<<<<< HEAD
-
-=======
->>>>>>> c30a45420fdf3319c56266508a723a64979a0cd5
        
     }
     .bottom{
@@ -364,7 +353,7 @@ p{
         justify-content: center;
         
     }
-     .humid,
+    .humid,
     .air {
         height: 2.5rem; /* 1rem might be too small to see clearly */
         width: 5rem;    /* Forces the browser to keep the original shape */
@@ -402,11 +391,11 @@ p{
     .search {
         flex-direction: row;
         gap: 10px;
-        height: auto;
+       
     }
 
     .inp_city {
-        width: 100%;
+        width: 70%;
         height: 45px;
         padding: 0px;
         box-sizing: border-box;
@@ -467,11 +456,7 @@ p{
         flex-direction: column;
         justify-content: space-around; /* iPhone 12 par elements ko perfect wrap aur wrap-around space dega */
         gap: 10px;
-<<<<<<< HEAD
         box-sizing: border-box;
-=======
-        box-sizing: border-box; 
->>>>>>> c30a45420fdf3319c56266508a723a64979a0cd5
     }
     
     /* Welcome Page Fixes */
@@ -490,6 +475,7 @@ p{
     p {
         font-size: 0.9rem; /* Text chota kiya taake space bache */
     }
+
     #enter {
         margin-top: 0.8rem;  
         font-size: 1.3rem;
