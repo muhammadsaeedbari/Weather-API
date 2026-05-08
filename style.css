@@ -491,13 +491,8 @@ body{
     }
 
     #animate2 { 
+        width: 90px; 
 
-   
-   
-        min-height: 90vh;
-        gap: 1rem;
-        box-sizing: border-box;
-       
     }
     
      .bottom{
