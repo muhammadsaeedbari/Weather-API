@@ -306,8 +306,8 @@ body{
 @media (max-width: 1024px) {
     
     .container, .container1 {
-        width: 500px ;
-        min-width: 60vw;
+        width: 100%;
+        min-width: 100%;
         min-height: 100vh;  
         margin: 0;          /* Remove any outer margins */
          
@@ -416,9 +416,12 @@ body{
 
 /* Mobile */
 @media (max-width: 768px) {
+     body {
+        padding: 0px; 
+    }
 
      .container, .container1 {
-        width: 450px;
+        min-width: 100%;
         min-height: 100vh;  
         margin: 0px;          /* Remove any outer margins */
          
