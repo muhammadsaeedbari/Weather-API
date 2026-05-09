@@ -306,7 +306,7 @@ body{
 @media (max-width: 1024px) {
     
     .container, .container1 {
-        width: 100%;
+     
         min-width: 100%;
         min-height: 100vh;  
         margin: 0;          /* Remove any outer margins */
@@ -534,7 +534,7 @@ body{
     }
 
     .container, .container1 {
-      width: 100vw;
+        min-width: 100vw;
         
         min-height: 100vh;  
         margin: 0px;          /* Remove any outer margins */
