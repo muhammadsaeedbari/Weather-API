@@ -67,59 +67,59 @@ async function getWeather(city) {
         humidityField.value = data.main.humidity + " %";
         airField.value = (data.wind.speed * 3.6).toFixed(1) + " km/h";
 
-// const iconCode = data.weather[0].icon;
-// weatherImg.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
-// weatherImg.style.display = "block"; 
+const iconCode = data.weather[0].icon;
+weatherImg.src = `https://openweathermap.org/img/wn/${iconCode}@4x.png`;
+weatherImg.style.display = "block"; 
 
 
 
         // Weather icon
-        const iconCode = data.weather[0].icon;
+//         const iconCode = data.weather[0].icon;
       
         
     
-const weatherId = data.weather[0].id;
-const weatherMain = data.weather[0].main;
+// const weatherId = data.weather[0].id;
+// const weatherMain = data.weather[0].main;
 
 
 
 
-// 1. Thunderstorm (Group 2xx)
-if (weatherId >= 200 && weatherId < 300) {
-     weatherImg.src = "images/thunder.png";
+// // 1. Thunderstorm (Group 2xx)
+// if (weatherId >= 200 && weatherId < 300) {
+//      weatherImg.src = "images/thunder.png";
     
-} 
-// 2. Drizzle (Group 3xx)
-else if (weatherId >= 300 && weatherId < 600) {
-     weatherImg.src = "images/rain.png";
+// } 
+// // 2. Drizzle (Group 3xx)
+// else if (weatherId >= 300 && weatherId < 600) {
+//      weatherImg.src = "images/rain.png";
     
-} 
+// } 
 
-// 3. Snow (Group 6xx)
-else if (weatherId >= 600 && weatherId < 700) {
-     weatherImg.src = "images/snow-fall.png";
+// // 3. Snow (Group 6xx)
+// else if (weatherId >= 600 && weatherId < 700) {
+//      weatherImg.src = "images/snow-fall.png";
     
-} 
-// 4. Atmosphere (Mist, Haze, Fog - Group 7xx)
-else if (weatherId >= 700 && weatherId < 800) {
-     weatherImg.src = "images/MistHaze.png";
+// } 
+// // 4. Atmosphere (Mist, Haze, Fog - Group 7xx)
+// else if (weatherId >= 700 && weatherId < 800) {
+//      weatherImg.src = "images/MistHaze.png";
     
-} 
-// 5. Clear (ID 800)
-else if (weatherId === 800) {
-     weatherImg.src = "images/sun.png";
+// } 
+// // 5. Clear (ID 800)
+// else if (weatherId === 800) {
+//      weatherImg.src = "images/sun.png";
     
-} 
-// 6. Clouds (Scattered, Broken, Overcast - Group 80x)
-else if (weatherId > 800 && weatherId < 900) {
-    weatherImg.src = "images/cloud.png"; // This will catch your ID 802!
+// } 
+// // 6. Clouds (Scattered, Broken, Overcast - Group 80x)
+// else if (weatherId > 800 && weatherId < 900) {
+//     weatherImg.src = "images/cloud.png"; // This will catch your ID 802!
 
-} 
-else {
-     weatherImg.src = "images/cloud.png"; // General fallback
+// } 
+// else {
+//      weatherImg.src = "images/cloud.png"; // General fallback
     
 
-}
+// }
 
 
         
